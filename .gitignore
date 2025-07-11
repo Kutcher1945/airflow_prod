@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+# logs/
+# *.log
+
+# Python virtual environments
+.venv/
+env/
+venv/
+
+# Airflow files
+airflow.db
+unittests.cfg
+webserver_config.py
+
+# Docker-related
+*.pid
+docker-compose.override.yml
+
+# Config files
+# .env
+# *.env
+
+# VS Code settings
+.vscode/
+.settings/
+
+# Jupyter Notebooks (optional)
+.ipynb_checkpoints/
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# MacOS and system files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# SQLite files (if ever used locally)
+*.sqlite
+*.sqlite3

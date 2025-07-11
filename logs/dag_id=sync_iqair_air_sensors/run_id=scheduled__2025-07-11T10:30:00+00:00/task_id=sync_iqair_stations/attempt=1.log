@@ -1,0 +1,33 @@
+[2025-07-11T10:40:01.828+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sync_iqair_air_sensors.sync_iqair_stations scheduled__2025-07-11T10:30:00+00:00 [queued]>
+[2025-07-11T10:40:01.845+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sync_iqair_air_sensors.sync_iqair_stations scheduled__2025-07-11T10:30:00+00:00 [queued]>
+[2025-07-11T10:40:01.845+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-11T10:40:01.866+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): sync_iqair_stations> on 2025-07-11 10:30:00+00:00
+[2025-07-11T10:40:01.873+0000] {standard_task_runner.py:60} INFO - Started process 89 to run task
+[2025-07-11T10:40:01.876+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'sync_iqair_air_sensors', 'sync_iqair_stations', 'scheduled__2025-07-11T10:30:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/iqair/sync_air_quality_data.py', '--cfg-path', '/tmp/tmp9u7gxx52']
+[2025-07-11T10:40:01.877+0000] {standard_task_runner.py:88} INFO - Job 13: Subtask sync_iqair_stations
+[2025-07-11T10:40:01.989+0000] {task_command.py:423} INFO - Running <TaskInstance: sync_iqair_air_sensors.sync_iqair_stations scheduled__2025-07-11T10:30:00+00:00 [running]> on host 95bc0fb54f73
+[2025-07-11T10:40:02.163+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='sync_iqair_air_sensors' AIRFLOW_CTX_TASK_ID='sync_iqair_stations' AIRFLOW_CTX_EXECUTION_DATE='2025-07-11T10:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-11T10:30:00+00:00'
+[2025-07-11T10:40:03.035+0000] {sync_air_quality_data.py:95} INFO - 🔄 Inserting 0 new and 39 updated stations...
+[2025-07-11T10:40:03.053+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/iqair/sync_air_quality_data.py", line 121, in sync_to_postgres
+    execute_batch(cursor, insert_sql, stations, page_size=100)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/extras.py", line 1216, in execute_batch
+    cur.execute(b";".join(sqls))
+psycopg2.errors.UndefinedColumn: column "dag_last_updated_at" of relation "eco_iq_air_sensors" does not exist
+LINE 5:         is_deleted, dag_updated, dag_last_updated_at
+                                         ^
+
+[2025-07-11T10:40:03.074+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=sync_iqair_air_sensors, task_id=sync_iqair_stations, execution_date=20250711T103000, start_date=20250711T104001, end_date=20250711T104003
+[2025-07-11T10:40:03.114+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 13 for task sync_iqair_stations (column "dag_last_updated_at" of relation "eco_iq_air_sensors" does not exist
+LINE 5:         is_deleted, dag_updated, dag_last_updated_at
+                                         ^
+; 89)
+[2025-07-11T10:40:03.134+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-07-11T10:40:03.173+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

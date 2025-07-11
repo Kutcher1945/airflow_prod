@@ -1,0 +1,7 @@
+pandas
+requests
+mistralai
+openpyxl
+psycopg2-binary
+tqdm
+apache-airflow
