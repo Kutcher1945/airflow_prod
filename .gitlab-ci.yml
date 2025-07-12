@@ -33,12 +33,6 @@ deploy:
     - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
     - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
 
-    - echo "🔁 Fixing permissions on remote..."
-    - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
-        sudo chown -R airflow:airflow $DEPLOY_PATH &&
-        sudo chmod -R u+rwX $DEPLOY_PATH
-      "
-
     - echo "🔁 Syncing project to remote host..."
     - rsync -az --delete --exclude='.git' ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
 
