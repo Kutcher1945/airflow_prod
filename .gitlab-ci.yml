@@ -19,23 +19,41 @@ stages:
 
 variables:
   GIT_SSL_NO_VERIFY: "1"
+  RSYNC_EXCLUDES: >
+    --exclude='.git'
+    --exclude='logs/'
+    --exclude='__pycache__/'
+    --exclude='*.py[cod]'
+    --exclude='*.log'
+    --exclude='*.sqlite'
+    --exclude='*.sqlite3'
+    --exclude='.venv/'
+    --exclude='venv/'
+    --exclude='env/'
+    --exclude='.vscode/'
+    --exclude='.cache/'
+    --exclude='.pytest_cache/'
+    --exclude='*.egg-info/'
+    --exclude='dist/'
+    --exclude='build/'
 
 .default-ssh-setup: &ssh_setup
   - echo "📦 Setting up SSH connection..."
   - mkdir -p ~/.ssh
   - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
   - chmod 600 ~/.ssh/id_rsa
-  - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
   - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
 
 before_script:
+  - set -euo pipefail
   - apt-get update && apt-get install -y openssh-client rsync curl
 
 prepare:
   stage: prepare
   script:
     - *ssh_setup
-    - echo "✅ SSH setup complete and host known keys added."
+    - echo "✅ SSH setup complete."
 
 deploy:
   stage: deploy
@@ -44,7 +62,7 @@ deploy:
   script:
     - *ssh_setup
     - echo "🔁 Syncing project to remote host..."
-    - rsync -az --delete --exclude='.git' --exclude='logs/' ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
+    - rsync -az --delete $RSYNC_EXCLUDES ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
 
     - echo "🚀 Restarting Airflow stack remotely..."
     - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
@@ -59,6 +77,10 @@ verify:
     - *ssh_setup
     - echo "🔍 Verifying Airflow webserver health..."
     - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
-        curl -sf http://localhost:8080/health || (echo '❌ Airflow webserver unhealthy!' && exit 1)
+        if ! curl -sf --max-time 10 http://localhost:8080/health; then
+          echo '❌ Airflow webserver is not healthy!' >&2
+          exit 1
+        else
+          echo '✅ Airflow webserver is healthy.'
+        fi
       "
-
