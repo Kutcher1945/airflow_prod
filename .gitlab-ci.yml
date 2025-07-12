@@ -13,6 +13,10 @@
 stages:
   - deploy
 
+# Disable SSL verification to avoid certificate issues during repo clone
+variables:
+  GIT_SSL_NO_VERIFY: "1"
+
 deploy:
   stage: deploy
   only:
@@ -22,6 +26,7 @@ deploy:
     - mkdir -p ~/.ssh
     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
     - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
 
     - echo "🔁 Syncing project to remote host..."
@@ -33,4 +38,5 @@ deploy:
         docker-compose down &&
         docker-compose up -d --build
       "
+
 
