@@ -3,9 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Logs
-# logs/
-# *.log
+Logs
+logs/
+*.log
 
 # Python virtual environments
 .venv/
