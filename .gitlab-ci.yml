@@ -10,7 +10,7 @@
 # This template uses one generic job with conditional builds
 # for the default branch and all other (MR) branches.
 
-image: registry.mycompany.com/library/debian:bullseye
+image: debian:bullseye
 
 stages:
   - deploy
@@ -32,13 +32,14 @@ deploy:
     - chmod 600 ~/.ssh/id_rsa
     - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
     - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
-  
+
     - echo "🔁 Syncing project to remote host..."
-    - rsync -az --delete --exclude='.git' --exclude='logs/' ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
-  
+    - rsync -az --delete --exclude='.git' ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
+
     - echo "🚀 Restarting Airflow stack remotely..."
     - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
         cd $DEPLOY_PATH &&
         docker-compose down &&
         docker-compose up -d --build
       "
+
