@@ -20,7 +20,9 @@ deploy:
   only:
     - master
   before_script:
-    - apt-get update && apt-get install -y openssh-client rsync
+    # Fix SSL cert issue
+    - apt-get update && apt-get install -y ca-certificates openssh-client rsync
+
     - echo "📦 Setting up SSH connection..."
     - mkdir -p ~/.ssh
     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
@@ -36,3 +38,4 @@ deploy:
         docker-compose down &&
         docker-compose up -d --build
       "
+
