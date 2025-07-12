@@ -1,35 +1,18 @@
-import os
-from dotenv import load_dotenv
 import psycopg2
 from psycopg2.extras import execute_batch
 from airflow.utils.log.logging_mixin import LoggingMixin
 
-# Load .env variables if running locally (does nothing in Docker)
-load_dotenv()
-
-logger = LoggingMixin().log
-
-# Safely fetch DB config from environment
 DB_CONFIG = {
-    "host": os.environ.get("POSTGRES_HOST"),
-    "port": os.environ.get("POSTGRES_PORT", "5432"),
-    "dbname": os.environ.get("POSTGRES_DB"),
-    "user": os.environ.get("POSTGRES_USER"),
-    "password": os.environ.get("POSTGRES_PASSWORD")
+    "host": "10.100.200.150",
+    "port": "5439",
+    "dbname": "sitcenter_postgis_datalake",
+    "user": "la_noche_estrellada",
+    "password": "Cfq,thNb13@"
 }
 
-# Fail early if critical env vars are missing
-required_keys = ["host", "dbname", "user", "password"]
-missing = [k for k in required_keys if not DB_CONFIG[k]]
-if missing:
-    raise RuntimeError(f"❌ Missing required database environment variables: {', '.join(missing)}")
-
 def load_to_postgres(**kwargs):
+    logger = LoggingMixin().log
     stations = kwargs["ti"].xcom_pull(task_ids="transform_iqair_data", key="stations")
-    if not stations:
-        logger.warning("⚠️ No stations data received from XCom.")
-        return
-
     conn = psycopg2.connect(**DB_CONFIG)
     cursor = conn.cursor()
 
@@ -80,5 +63,4 @@ def load_to_postgres(**kwargs):
     conn.commit()
     cursor.close()
     conn.close()
-
     logger.info(f"✅ Loaded {len(stations)} records into the database.")
