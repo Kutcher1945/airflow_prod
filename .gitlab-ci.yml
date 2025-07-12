@@ -30,22 +30,20 @@ deploy:
     - mkdir -p ~/.ssh
     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa
-    - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
     - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
-  
+
     - echo "🔁 Syncing project to remote host..."
-    - rsync -az --delete \
-        --omit-dir-times \
-        --no-perms \
-        --exclude='.git' \
-        --exclude='**/__pycache__/' \
-        --exclude='**/*.pyc' \
-        --exclude='logs/' \
-        ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
-  
+    - >
+      rsync -az --delete --omit-dir-times --no-perms
+      --exclude='.git' --exclude='**/__pycache__/'
+      --exclude='**/*.pyc' --exclude='logs/'
+      ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
+
     - echo "🚀 Restarting Airflow stack remotely..."
-    - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
-        cd $DEPLOY_PATH &&
+    - ssh "$DEPLOY_USER@$DEPLOY_HOST" '
+        set -e
+        cd "$DEPLOY_PATH" &&
         docker-compose down &&
         docker-compose up -d --build
-      "
+      '
