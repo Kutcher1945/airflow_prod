@@ -10,12 +10,16 @@
 # This template uses one generic job with conditional builds
 # for the default branch and all other (MR) branches.
 
+image: debian:bullseye
+
 stages:
   - deploy
 
-# Disable SSL verification to avoid certificate issues during repo clone
 variables:
   GIT_SSL_NO_VERIFY: "1"
+
+before_script:
+  - apt-get update && apt-get install -y openssh-client rsync
 
 deploy:
   stage: deploy
@@ -38,5 +42,4 @@ deploy:
         docker-compose down &&
         docker-compose up -d --build
       "
-
 
