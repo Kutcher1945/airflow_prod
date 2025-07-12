@@ -34,7 +34,10 @@ deploy:
     - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
 
     - echo "🔁 Syncing project to remote host..."
-    - rsync -az --delete --exclude='.git' ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
+    - rsync -az --delete \
+        --exclude='.git' \
+        --exclude='logs/' \
+        ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
 
     - echo "🚀 Restarting Airflow stack remotely..."
     - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
