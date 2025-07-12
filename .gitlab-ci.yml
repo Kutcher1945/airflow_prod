@@ -32,13 +32,10 @@ deploy:
     - chmod 600 ~/.ssh/id_rsa
     - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
     - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
-
+  
     - echo "🔁 Syncing project to remote host..."
-    - rsync -az --delete \
-        --exclude='.git' \
-        --exclude='logs/' \
-        ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
-
+    - rsync -az --delete --exclude='.git' --exclude='logs/' ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
+  
     - echo "🚀 Restarting Airflow stack remotely..."
     - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
         cd $DEPLOY_PATH &&
