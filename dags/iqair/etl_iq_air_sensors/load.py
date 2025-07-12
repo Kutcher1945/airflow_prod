@@ -1,18 +1,20 @@
+import os
 import psycopg2
 from psycopg2.extras import execute_batch
 from airflow.utils.log.logging_mixin import LoggingMixin
 
 DB_CONFIG = {
-    "host": "10.100.200.150",
-    "port": "5439",
-    "dbname": "sitcenter_postgis_datalake",
-    "user": "la_noche_estrellada",
-    "password": "Cfq,thNb13@"
+    "host": os.environ["POSTGRES_HOST"],
+    "port": os.environ.get("POSTGRES_PORT", "5432"),
+    "dbname": os.environ["POSTGRES_DB"],
+    "user": os.environ["POSTGRES_USER"],
+    "password": os.environ["POSTGRES_PASSWORD"]
 }
 
 def load_to_postgres(**kwargs):
     logger = LoggingMixin().log
     stations = kwargs["ti"].xcom_pull(task_ids="transform_iqair_data", key="stations")
+
     conn = psycopg2.connect(**DB_CONFIG)
     cursor = conn.cursor()
 
