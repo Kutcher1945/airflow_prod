@@ -20,15 +20,20 @@ deploy:
   only:
     - master
   before_script:
-    # Fix SSL cert issue
-    - apt-get update && apt-get install -y ca-certificates openssh-client rsync
+    # Install required packages
+    - apt-get update && apt-get install -y ca-certificates openssh-client rsync git
 
+    # Disable SSL verification for Git (ONLY inside CI)
+    - git config --global http.sslVerify false
+
+    # Set up SSH
     - echo "📦 Setting up SSH connection..."
     - mkdir -p ~/.ssh
     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa
     - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
     - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+
   script:
     - echo "🔁 Syncing project to remote host..."
     - rsync -az --delete --exclude='.git' ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
@@ -38,4 +43,5 @@ deploy:
         docker-compose down &&
         docker-compose up -d --build
       "
+
 
