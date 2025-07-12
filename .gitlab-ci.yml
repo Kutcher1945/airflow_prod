@@ -13,32 +13,52 @@
 image: debian:bullseye
 
 stages:
+  - prepare
   - deploy
+  - verify
 
 variables:
   GIT_SSL_NO_VERIFY: "1"
 
+.default-ssh-setup: &ssh_setup
+  - echo "📦 Setting up SSH connection..."
+  - mkdir -p ~/.ssh
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+
 before_script:
-  - apt-get update && apt-get install -y openssh-client rsync
+  - apt-get update && apt-get install -y openssh-client rsync curl
+
+prepare:
+  stage: prepare
+  script:
+    - *ssh_setup
+    - echo "✅ SSH setup complete and host known keys added."
 
 deploy:
   stage: deploy
   only:
     - master
   script:
-    - echo "📦 Setting up SSH connection..."
-    - mkdir -p ~/.ssh
-    - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-    - chmod 600 ~/.ssh/id_rsa
-    - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-    - ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
-  
+    - *ssh_setup
     - echo "🔁 Syncing project to remote host..."
     - rsync -az --delete --exclude='.git' --exclude='logs/' ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
-  
+
     - echo "🚀 Restarting Airflow stack remotely..."
     - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
         cd $DEPLOY_PATH &&
         docker-compose down &&
         docker-compose up -d --build
       "
+
+verify:
+  stage: verify
+  script:
+    - *ssh_setup
+    - echo "🔍 Verifying Airflow webserver health..."
+    - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
+        curl -sf http://localhost:8080/health || (echo '❌ Airflow webserver unhealthy!' && exit 1)
+      "
+
