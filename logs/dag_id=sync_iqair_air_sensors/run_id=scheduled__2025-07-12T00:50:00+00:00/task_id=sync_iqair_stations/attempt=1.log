@@ -1,0 +1,15 @@
+[2025-07-12T01:00:01.543+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sync_iqair_air_sensors.sync_iqair_stations scheduled__2025-07-12T00:50:00+00:00 [queued]>
+[2025-07-12T01:00:01.569+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sync_iqair_air_sensors.sync_iqair_stations scheduled__2025-07-12T00:50:00+00:00 [queued]>
+[2025-07-12T01:00:01.570+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-12T01:00:01.604+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): sync_iqair_stations> on 2025-07-12 00:50:00+00:00
+[2025-07-12T01:00:01.613+0000] {standard_task_runner.py:60} INFO - Started process 12100 to run task
+[2025-07-12T01:00:01.617+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'sync_iqair_air_sensors', 'sync_iqair_stations', 'scheduled__2025-07-12T00:50:00+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/iqair/sync_air_quality_data.py', '--cfg-path', '/tmp/tmpqe2lfsde']
+[2025-07-12T01:00:01.618+0000] {standard_task_runner.py:88} INFO - Job 105: Subtask sync_iqair_stations
+[2025-07-12T01:00:01.807+0000] {task_command.py:423} INFO - Running <TaskInstance: sync_iqair_air_sensors.sync_iqair_stations scheduled__2025-07-12T00:50:00+00:00 [running]> on host c684eaeee3e1
+[2025-07-12T01:00:02.108+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='sync_iqair_air_sensors' AIRFLOW_CTX_TASK_ID='sync_iqair_stations' AIRFLOW_CTX_EXECUTION_DATE='2025-07-12T00:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-12T00:50:00+00:00'
+[2025-07-12T01:00:02.920+0000] {sync_air_quality_data.py:95} INFO - 🔄 Inserting 0 new and 38 updated stations...
+[2025-07-12T01:00:02.933+0000] {sync_air_quality_data.py:126} INFO - ✅ Sync complete.
+[2025-07-12T01:00:02.934+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-12T01:00:02.966+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=sync_iqair_air_sensors, task_id=sync_iqair_stations, execution_date=20250712T005000, start_date=20250712T010001, end_date=20250712T010002
+[2025-07-12T01:00:03.038+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-12T01:00:03.088+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

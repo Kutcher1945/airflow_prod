@@ -1,0 +1,26 @@
+[2025-07-12T10:40:30.214+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sync_iqair_air_sensors.extract_iqair_data scheduled__2025-07-12T10:30:00+00:00 [queued]>
+[2025-07-12T10:40:30.254+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sync_iqair_air_sensors.extract_iqair_data scheduled__2025-07-12T10:30:00+00:00 [queued]>
+[2025-07-12T10:40:30.256+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-07-12T10:40:30.299+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_iqair_data> on 2025-07-12 10:30:00+00:00
+[2025-07-12T10:40:30.307+0000] {standard_task_runner.py:60} INFO - Started process 20411 to run task
+[2025-07-12T10:40:30.312+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'sync_iqair_air_sensors', 'extract_iqair_data', 'scheduled__2025-07-12T10:30:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/iqair/sync_air_quality_data.py', '--cfg-path', '/tmp/tmp8zqeiomc']
+[2025-07-12T10:40:30.313+0000] {standard_task_runner.py:88} INFO - Job 163: Subtask extract_iqair_data
+[2025-07-12T10:40:30.445+0000] {task_command.py:423} INFO - Running <TaskInstance: sync_iqair_air_sensors.extract_iqair_data scheduled__2025-07-12T10:30:00+00:00 [running]> on host c684eaeee3e1
+[2025-07-12T10:40:30.684+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='sync_iqair_air_sensors' AIRFLOW_CTX_TASK_ID='extract_iqair_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-12T10:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-12T10:30:00+00:00'
+[2025-07-12T10:40:31.378+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/iqair/etl_iq_air_sensors/extract.py", line 8, in extract_iqair_data
+    resp.raise_for_status()
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 422 Client Error: Unknown for url: https://website-api.airvisual.com/v1/places/map/clusters?...
+[2025-07-12T10:40:31.418+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=sync_iqair_air_sensors, task_id=extract_iqair_data, execution_date=20250712T103000, start_date=20250712T104030, end_date=20250712T104031
+[2025-07-12T10:40:31.500+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 163 for task extract_iqair_data (422 Client Error: Unknown for url: https://website-api.airvisual.com/v1/places/map/clusters?...; 20411)
+[2025-07-12T10:40:31.530+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-07-12T10:40:31.580+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

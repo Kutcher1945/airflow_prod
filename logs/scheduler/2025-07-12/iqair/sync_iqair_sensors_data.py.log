@@ -1,0 +1,14 @@
+[2025-07-12T11:57:34.769+0000] {processor.py:161} INFO - Started process (PID=21442) to work on /opt/airflow/dags/iqair/sync_iqair_sensors_data.py
+[2025-07-12T11:57:34.771+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iqair/sync_iqair_sensors_data.py for tasks to queue
+[2025-07-12T11:57:34.774+0000] {logging_mixin.py:188} INFO - [2025-07-12T11:57:34.772+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/iqair/sync_iqair_sensors_data.py
+[2025-07-12T11:57:34.807+0000] {processor.py:840} INFO - DAG(s) 'sync_iqair_air_sensors' retrieved from /opt/airflow/dags/iqair/sync_iqair_sensors_data.py
+[2025-07-12T11:57:35.063+0000] {logging_mixin.py:188} INFO - [2025-07-12T11:57:35.063+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-07-12T11:57:35.110+0000] {logging_mixin.py:188} INFO - [2025-07-12T11:57:35.110+0000] {dag.py:3823} INFO - Setting next_dagrun for sync_iqair_air_sensors to 2025-07-12 11:50:00+00:00, run_after=2025-07-12 12:00:00+00:00
+[2025-07-12T11:57:35.174+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iqair/sync_iqair_sensors_data.py took 0.411 seconds
+[2025-07-12T11:58:06.145+0000] {processor.py:161} INFO - Started process (PID=21451) to work on /opt/airflow/dags/iqair/sync_iqair_sensors_data.py
+[2025-07-12T11:58:06.148+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iqair/sync_iqair_sensors_data.py for tasks to queue
+[2025-07-12T11:58:06.149+0000] {logging_mixin.py:188} INFO - [2025-07-12T11:58:06.148+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/iqair/sync_iqair_sensors_data.py
+[2025-07-12T11:58:06.165+0000] {processor.py:840} INFO - DAG(s) 'sync_iqair_air_sensors' retrieved from /opt/airflow/dags/iqair/sync_iqair_sensors_data.py
+[2025-07-12T11:58:06.226+0000] {logging_mixin.py:188} INFO - [2025-07-12T11:58:06.226+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-07-12T11:58:06.266+0000] {logging_mixin.py:188} INFO - [2025-07-12T11:58:06.265+0000] {dag.py:3823} INFO - Setting next_dagrun for sync_iqair_air_sensors to 2025-07-12 11:50:00+00:00, run_after=2025-07-12 12:00:00+00:00
+[2025-07-12T11:58:06.314+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iqair/sync_iqair_sensors_data.py took 0.173 seconds
