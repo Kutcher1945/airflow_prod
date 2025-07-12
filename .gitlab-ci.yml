@@ -62,14 +62,14 @@ deploy:
   script:
     - *ssh_setup
     - echo "🔁 Syncing project to remote host..."
-    - rsync -az --delete $RSYNC_EXCLUDES ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
-
-    - echo "🚀 Restarting Airflow stack remotely..."
-    - ssh "$DEPLOY_USER@$DEPLOY_HOST" "
-        cd $DEPLOY_PATH &&
-        docker-compose down &&
-        docker-compose up -d --build
-      "
+    - rsync -az --delete \
+        --exclude='.git' \
+        --exclude='logs/***' \ 
+        --exclude='logs/' \
+        --exclude='*.log' \
+        --exclude='__pycache__/' \
+        --exclude='*.py[cod]' \
+        ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH"
 
 verify:
   stage: verify
