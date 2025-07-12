@@ -42,8 +42,13 @@ deploy:
 
     - echo "🚀 Restarting Airflow stack remotely..."
     - ssh "$DEPLOY_USER@$DEPLOY_HOST" '
-        set -e
-        cd "$DEPLOY_PATH" &&
-        docker-compose down &&
-        docker-compose up -d --build
-      '
+      set -e
+      cd "$DEPLOY_PATH"
+      if [ ! -f docker-compose.yaml ]; then
+        echo "❌ docker-compose.yaml not found in $DEPLOY_PATH"
+        ls -la
+        exit 1
+      fi
+      docker-compose -f docker-compose.yaml down
+      docker-compose -f docker-compose.yaml up -d --build
+    '
