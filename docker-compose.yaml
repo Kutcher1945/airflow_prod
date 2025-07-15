@@ -54,6 +54,7 @@ x-airflow-common:
   environment:
     &airflow-common-env
     AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
+    AIRFLOW__WEBSERVER__WARN_DEPLOYMENT_EXPOSURE: 'False'
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:4HPzQt2HyU@10.100.200.150:5439/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:4HPzQt2HyU@10.100.200.150:5439/airflow
