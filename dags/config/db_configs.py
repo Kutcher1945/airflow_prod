@@ -5,3 +5,9 @@ DB_CONFIG = {
     "user": "la_noche_estrellada",
     "password": "Cfq,thNb13@"
 }
+
+MEASUREMENTS_URL = (
+    "https://website-api.airvisual.com/v1/stations/{station_id}/measurements"
+    "?units.temperature=celsius&units.distance=kilometer&units.pressure=millibar"
+    "&units.system=metric&AQI=US&language=ru"
+)
