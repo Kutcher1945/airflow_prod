@@ -28,7 +28,8 @@ with DAG(
     description='Fetch and insert measurements from IQAir sensors',
     start_date=datetime(2025, 7, 16),
     schedule_interval='*/10 * * * *',  # every 10 minutes
-    catchup=False
+    catchup=False,
+    tags=["iqair", "measuresments"]
 ) as dag:
 
     def get_station_ids():

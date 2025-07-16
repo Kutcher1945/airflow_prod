@@ -29,7 +29,8 @@ dag = DAG(
     ),
     schedule_interval='*/5 * * * *',
     start_date=datetime(2025, 7, 15),
-    catchup=False
+    catchup=False,
+    tags=["iqair", "history", "current"]
 )
 
 def extract_task(ti):

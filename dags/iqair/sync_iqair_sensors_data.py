@@ -26,7 +26,7 @@ with DAG(
     start_date=days_ago(1),
     catchup=False,
     default_args=default_args,
-    tags=["iqair", "air_quality"]
+    tags=["iqair", "sensors"]
 ) as dag:
 
     extract = PythonOperator(
