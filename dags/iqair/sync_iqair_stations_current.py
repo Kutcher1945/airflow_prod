@@ -13,7 +13,7 @@ default_args = {
 }
 
 dag = DAG(
-    'iq_air_sensors_stations_current',
+    'iqair_sensors_history',
     default_args=default_args,
     description=(
         'This ETL DAG synchronizes live air quality data from external API sources '

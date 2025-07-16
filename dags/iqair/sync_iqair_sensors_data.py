@@ -9,7 +9,7 @@ from iqair.etl_iq_air_sensors.load import load_to_postgres
 default_args = {"owner": "airflow", "retries": 1}
 
 with DAG(
-    dag_id="sync_iqair_air_sensors",
+    dag_id="iqair_sensors",
     description=(
         'This ETL DAG syncs air quality data from the IQAir API into a PostgreSQL database every 10 minutes. '
         'The DAG includes the following steps:\n'
