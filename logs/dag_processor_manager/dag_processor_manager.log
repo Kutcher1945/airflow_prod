@@ -30606,3 +30606,646 @@ File Path                                                PID    Runtime      # D
 /opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.25s           2025-07-16T06:56:26
 /opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.27s           2025-07-16T06:56:26
 ================================================================================
+[2025-07-16T06:56:59.414+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.07s           2025-07-16T06:56:30
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.07s           2025-07-16T06:56:30
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.18s           2025-07-16T06:56:30
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.18s           2025-07-16T06:56:57
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.19s           2025-07-16T06:56:57
+================================================================================
+[2025-07-16T06:57:03.683+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-07-16T06:57:03.690+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-07-16T06:57:30.207+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.09s           2025-07-16T06:57:01
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T06:57:01
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.25s           2025-07-16T06:57:01
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.23s           2025-07-16T06:57:28
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.25s           2025-07-16T06:57:28
+================================================================================
+[2025-07-16T06:58:00.872+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.09s           2025-07-16T06:57:32
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T06:57:32
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.43s           2025-07-16T06:57:32
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.18s           2025-07-16T06:57:59
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.20s           2025-07-16T06:57:59
+================================================================================
+[2025-07-16T06:58:31.546+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T06:58:02
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T06:58:03
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.24s           2025-07-16T06:58:03
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.30s           2025-07-16T06:58:29
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.31s           2025-07-16T06:58:29
+================================================================================
+[2025-07-16T06:59:02.220+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.07s           2025-07-16T06:58:33
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.07s           2025-07-16T06:58:33
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.20s           2025-07-16T06:58:33
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.21s           2025-07-16T06:59:00
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.22s           2025-07-16T06:59:00
+================================================================================
+[2025-07-16T06:59:33.168+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.09s           2025-07-16T06:59:04
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T06:59:04
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.24s           2025-07-16T06:59:04
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.27s           2025-07-16T06:59:31
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.27s           2025-07-16T06:59:31
+================================================================================
+[2025-07-16T07:00:03.834+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.06s           2025-07-16T06:59:35
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T06:59:35
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.19s           2025-07-16T06:59:35
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.18s           2025-07-16T07:00:01
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.19s           2025-07-16T07:00:01
+================================================================================
+[2025-07-16T07:00:34.606+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.13s           2025-07-16T07:00:06
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.10s           2025-07-16T07:00:06
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.32s           2025-07-16T07:00:06
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.22s           2025-07-16T07:00:32
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.24s           2025-07-16T07:00:32
+================================================================================
+[2025-07-16T07:01:05.330+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.09s           2025-07-16T07:00:36
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.11s           2025-07-16T07:00:36
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.31s           2025-07-16T07:00:36
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.18s           2025-07-16T07:01:03
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.19s           2025-07-16T07:01:03
+================================================================================
+[2025-07-16T07:01:36.026+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.09s           2025-07-16T07:01:07
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:01:07
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.25s           2025-07-16T07:01:07
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.23s           2025-07-16T07:01:34
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.25s           2025-07-16T07:01:34
+================================================================================
+[2025-07-16T07:02:04.627+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-07-16T07:02:04.635+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-07-16T07:02:06.727+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.10s           2025-07-16T07:01:38
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:01:38
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.26s           2025-07-16T07:01:38
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.24s           2025-07-16T07:02:04
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.26s           2025-07-16T07:02:04
+================================================================================
+[2025-07-16T07:02:37.377+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.09s           2025-07-16T07:02:08
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:02:08
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.23s           2025-07-16T07:02:08
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.22s           2025-07-16T07:02:35
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.22s           2025-07-16T07:02:35
+================================================================================
+[2025-07-16T07:03:08.198+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:02:39
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T07:02:39
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.41s           2025-07-16T07:02:39
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.25s           2025-07-16T07:03:06
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.25s           2025-07-16T07:03:06
+================================================================================
+[2025-07-16T07:03:38.809+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.07s           2025-07-16T07:03:10
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.07s           2025-07-16T07:03:10
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.19s           2025-07-16T07:03:10
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.20s           2025-07-16T07:03:36
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.21s           2025-07-16T07:03:36
+================================================================================
+[2025-07-16T07:04:09.477+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.11s           2025-07-16T07:03:40
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:03:41
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.26s           2025-07-16T07:03:41
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.22s           2025-07-16T07:04:07
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.22s           2025-07-16T07:04:07
+================================================================================
+[2025-07-16T07:04:40.133+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.07s           2025-07-16T07:04:11
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.07s           2025-07-16T07:04:11
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.20s           2025-07-16T07:04:11
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.21s           2025-07-16T07:04:38
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.21s           2025-07-16T07:04:38
+================================================================================
+[2025-07-16T07:05:10.755+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:04:42
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T07:04:42
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.22s           2025-07-16T07:04:42
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.17s           2025-07-16T07:05:08
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.19s           2025-07-16T07:05:08
+================================================================================
+[2025-07-16T07:05:41.683+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.09s           2025-07-16T07:05:12
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:05:12
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.27s           2025-07-16T07:05:13
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.24s           2025-07-16T07:05:39
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.26s           2025-07-16T07:05:39
+================================================================================
+[2025-07-16T07:06:12.380+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.10s           2025-07-16T07:05:43
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:05:43
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.25s           2025-07-16T07:05:43
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.19s           2025-07-16T07:06:10
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.21s           2025-07-16T07:06:10
+================================================================================
+[2025-07-16T07:06:43.017+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:06:14
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.07s           2025-07-16T07:06:14
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.19s           2025-07-16T07:06:14
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.23s           2025-07-16T07:06:41
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.25s           2025-07-16T07:06:41
+================================================================================
+[2025-07-16T07:07:04.628+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-07-16T07:07:04.634+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-07-16T07:07:13.750+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:06:45
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:06:45
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.24s           2025-07-16T07:06:45
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.18s           2025-07-16T07:07:11
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.18s           2025-07-16T07:07:11
+================================================================================
+[2025-07-16T07:07:44.463+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:07:15
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T07:07:15
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.23s           2025-07-16T07:07:15
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.19s           2025-07-16T07:07:42
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.21s           2025-07-16T07:07:42
+================================================================================
+[2025-07-16T07:08:15.461+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.06s           2025-07-16T07:07:46
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.07s           2025-07-16T07:07:46
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.30s           2025-07-16T07:07:46
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.33s           2025-07-16T07:08:13
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.33s           2025-07-16T07:08:13
+================================================================================
+[2025-07-16T07:08:46.436+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.09s           2025-07-16T07:08:17
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:08:17
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.26s           2025-07-16T07:08:17
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.23s           2025-07-16T07:08:44
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.26s           2025-07-16T07:08:44
+================================================================================
+[2025-07-16T07:09:16.782+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.09s           2025-07-16T07:08:48
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.10s           2025-07-16T07:08:48
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.27s           2025-07-16T07:08:48
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.39s           2025-07-16T07:09:15
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.42s           2025-07-16T07:09:15
+================================================================================
+[2025-07-16T07:09:47.118+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.25s           2025-07-16T07:09:19
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.22s           2025-07-16T07:09:19
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.60s           2025-07-16T07:09:19
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.32s           2025-07-16T07:09:46
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.33s           2025-07-16T07:09:46
+================================================================================
+[2025-07-16T07:10:17.377+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.14s           2025-07-16T07:09:49
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.14s           2025-07-16T07:09:50
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.35s           2025-07-16T07:09:50
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.37s           2025-07-16T07:10:17
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.40s           2025-07-16T07:10:17
+================================================================================
+[2025-07-16T07:10:47.702+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.17s           2025-07-16T07:10:19
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.15s           2025-07-16T07:10:20
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.42s           2025-07-16T07:10:21
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py         842  0.01s             1           0  0.37s           2025-07-16T07:10:17
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py     841  0.03s             1           0  0.40s           2025-07-16T07:10:17
+================================================================================
+[2025-07-16T07:11:18.466+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.11s           2025-07-16T07:10:49
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.12s           2025-07-16T07:10:50
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.36s           2025-07-16T07:10:52
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py         853  0.01s             1           0  0.34s           2025-07-16T07:10:48
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py     852  0.02s             1           0  0.37s           2025-07-16T07:10:48
+================================================================================
+[2025-07-16T07:11:49.488+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.12s           2025-07-16T07:11:20
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:11:22
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.23s           2025-07-16T07:11:23
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py         865  0.01s             1           0  0.30s           2025-07-16T07:11:18
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py     864  0.03s             1           0  0.33s           2025-07-16T07:11:18
+================================================================================
+[2025-07-16T07:12:04.940+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-07-16T07:12:04.951+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-07-16T07:12:19.755+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.13s           2025-07-16T07:11:50
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.12s           2025-07-16T07:11:52
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.41s           2025-07-16T07:11:53
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.35s           2025-07-16T07:11:49
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.38s           2025-07-16T07:11:49
+================================================================================
+[2025-07-16T07:12:50.356+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.30s           2025-07-16T07:12:21
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.11s           2025-07-16T07:12:22
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.38s           2025-07-16T07:12:24
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.43s           2025-07-16T07:12:20
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.41s           2025-07-16T07:12:20
+================================================================================
+[2025-07-16T07:13:20.716+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:12:52
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.09s           2025-07-16T07:12:53
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.45s           2025-07-16T07:12:54
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.34s           2025-07-16T07:12:51
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.37s           2025-07-16T07:12:51
+================================================================================
+[2025-07-16T07:13:51.206+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.11s           2025-07-16T07:13:22
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.12s           2025-07-16T07:13:23
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.36s           2025-07-16T07:13:25
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.30s           2025-07-16T07:13:21
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.30s           2025-07-16T07:13:21
+================================================================================
+[2025-07-16T07:14:21.533+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.11s           2025-07-16T07:13:53
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.13s           2025-07-16T07:13:54
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.23s           2025-07-16T07:13:56
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.27s           2025-07-16T07:13:52
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.23s           2025-07-16T07:13:51
+================================================================================
+[2025-07-16T07:14:51.770+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.11s           2025-07-16T07:14:23
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.12s           2025-07-16T07:14:25
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.39s           2025-07-16T07:14:27
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.29s           2025-07-16T07:14:22
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.32s           2025-07-16T07:14:23
+================================================================================
+[2025-07-16T07:15:22.186+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.13s           2025-07-16T07:14:54
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.15s           2025-07-16T07:14:55
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.24s           2025-07-16T07:14:58
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.37s           2025-07-16T07:14:53
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.36s           2025-07-16T07:14:53
+================================================================================
+[2025-07-16T07:15:52.355+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.12s           2025-07-16T07:15:24
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.16s           2025-07-16T07:15:25
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.30s           2025-07-16T07:15:29
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.37s           2025-07-16T07:15:24
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.41s           2025-07-16T07:15:24
+================================================================================
+[2025-07-16T07:16:22.706+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.13s           2025-07-16T07:15:55
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.14s           2025-07-16T07:15:56
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.28s           2025-07-16T07:15:59
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.37s           2025-07-16T07:15:55
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.35s           2025-07-16T07:15:55
+================================================================================
+[2025-07-16T07:16:52.980+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.12s           2025-07-16T07:16:26
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.13s           2025-07-16T07:16:26
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.35s           2025-07-16T07:16:29
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.41s           2025-07-16T07:16:26
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.46s           2025-07-16T07:16:26
+================================================================================
+[2025-07-16T07:17:05.159+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-07-16T07:17:05.169+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-07-16T07:17:23.573+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.11s           2025-07-16T07:16:56
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.10s           2025-07-16T07:16:57
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.30s           2025-07-16T07:17:00
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.27s           2025-07-16T07:16:56
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.30s           2025-07-16T07:16:56
+================================================================================
+[2025-07-16T07:17:54.129+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.15s           2025-07-16T07:17:27
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.15s           2025-07-16T07:17:27
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.61s           2025-07-16T07:17:31
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.50s           2025-07-16T07:17:27
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.47s           2025-07-16T07:17:27
+================================================================================
+[2025-07-16T07:18:24.763+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.12s           2025-07-16T07:17:58
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.12s           2025-07-16T07:17:58
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.31s           2025-07-16T07:18:01
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.37s           2025-07-16T07:17:58
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.36s           2025-07-16T07:17:58
+================================================================================
+[2025-07-16T07:18:55.647+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.07s           2025-07-16T07:18:29
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T07:18:29
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.20s           2025-07-16T07:18:32
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.27s           2025-07-16T07:18:29
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.30s           2025-07-16T07:18:29
+================================================================================
+[2025-07-16T07:18:56.659+0000] {manager.py:1129} WARNING - Skipping processing of missing file: /opt/airflow/dags/iqair/sync_iqair_sensors_data.py
+[2025-07-16T07:19:26.336+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:18:59
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T07:18:59
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.19s           2025-07-16T07:19:03
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.23s           2025-07-16T07:18:59
+================================================================================
+[2025-07-16T07:19:56.963+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:19:30
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T07:19:30
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.33s           2025-07-16T07:19:33
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.21s           2025-07-16T07:19:30
+================================================================================
+[2025-07-16T07:20:27.562+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:20:01
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T07:20:01
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.19s           2025-07-16T07:20:04
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py    1047  0.01s             1           0  0.21s           2025-07-16T07:20:01
+================================================================================
+[2025-07-16T07:20:58.254+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.07s           2025-07-16T07:20:31
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.07s           2025-07-16T07:20:31
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.25s           2025-07-16T07:20:35
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py    1057  0.01s             1           0  0.25s           2025-07-16T07:20:27
+================================================================================
+[2025-07-16T07:21:29.007+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.10s           2025-07-16T07:21:02
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.10s           2025-07-16T07:21:02
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.43s           2025-07-16T07:21:05
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py    1067  0.01s             1           0  0.31s           2025-07-16T07:20:58
+================================================================================
+[2025-07-16T07:21:59.562+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:21:33
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T07:21:33
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.23s           2025-07-16T07:21:36
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py    1077  0.01s             1           0  0.31s           2025-07-16T07:21:29
+================================================================================
+[2025-07-16T07:22:05.866+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-07-16T07:22:05.874+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2025-07-16T07:22:30.132+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.08s           2025-07-16T07:22:03
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.08s           2025-07-16T07:22:03
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.25s           2025-07-16T07:22:07
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.51s           2025-07-16T07:22:21
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py    1092  0.01s             1           0  0.48s           2025-07-16T07:22:00
+================================================================================
+[2025-07-16T07:23:00.247+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.06s           2025-07-16T07:22:34
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.06s           2025-07-16T07:22:34
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.49s           2025-07-16T07:22:37
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.23s           2025-07-16T07:22:36
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py                            1           0  0.38s           2025-07-16T07:22:30
+================================================================================
+[2025-07-16T07:23:31.250+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/iqair/etl_iq_air_sensors/load.py                                0           0  0.14s           2025-07-16T07:23:04
+/opt/airflow/dags/iqair/etl_iq_air_sensors/transform.py                           0           0  0.14s           2025-07-16T07:23:04
+/opt/airflow/dags/iqair/sync_iqair_measures.py                                    1           0  0.33s           2025-07-16T07:23:08
+/opt/airflow/dags/iqair/sync_iqair_sensors_data.py                                1           0  0.30s           2025-07-16T07:23:07
+/opt/airflow/dags/iqair/sync_iqair_stations_current.py    1116  0.01s             1           0  0.23s           2025-07-16T07:23:30
+================================================================================
