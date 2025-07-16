@@ -1,5 +1,5 @@
 import psycopg2
-from config import DB_CONFIG
+from config.db_configs import DB_CONFIG 
 
 def extract_station_ids(**context):
     conn = psycopg2.connect(**DB_CONFIG)
